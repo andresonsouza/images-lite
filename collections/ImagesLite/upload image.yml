@@ -1,0 +1,31 @@
+info:
+  name: upload image
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/v1/images
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: teste
+      - name: file
+        type: file
+        value:
+          - c:\Andreson BKP\Projetos de Estudo\spring-boot-reactjs\collections\ImagesLite\Tipo de Notificação.png
+      - name: tags
+        type: text
+        value: tag1
+      - name: tags
+        type: text
+        value: tag2
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
