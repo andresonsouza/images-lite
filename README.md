@@ -50,7 +50,7 @@ O **ImagesLite** é uma solução para envio, categorização e busca de arquivo
 
 ### **1. Clonar o repositório**
 ```bash
-git clone https://github.com/andresonsouza/spring-boot-reactjs.git
+git clone https://github.com/andresonsouza/images-lite.git
 cd imageslite
 ```
 
